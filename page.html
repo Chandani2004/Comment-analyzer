@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Comment Analyzer</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Comment Analyzer</h1>
+        <p>Enter the YouTube video link to analyze its comments.</p>
+        <input type="text" id="videoUrlInput" placeholder="Enter YouTube Video URL">
+        <button id="analyzeButton">Analyze Comments</button>
+        <button id="clearButton">Clear</button>
+
+        <div id="result">
+            <h3 id="totalComments"></h3>
+            <div class="comments-container">
+                <div class="comments-section" id="positiveComments">
+                    <h2>Positive Comments 😊</h2>
+                    <ul></ul>
+                </div>
+                <div class="comments-section" id="neutralComments">
+                    <h2>Neutral Comments 😐</h2>
+                    <ul></ul>
+                </div>
+                <div class="comments-section" id="negativeComments">
+                    <h2>Negative Comments 😞</h2>
+                    <ul></ul>
+                </div>
+            </div>
+            <div id="percentages">
+                <p id="positivePercentage"></p>
+                <p id="neutralPercentage"></p>
+                <p id="negativePercentage"></p>
+            </div>
+        </div>
+    </div>
+    <script src="page.js"></script>
+</body>
+</html>
